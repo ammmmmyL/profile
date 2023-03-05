@@ -1,29 +1,34 @@
 # Personal website
 
-## Get Started 
+## Get Started
 
 - `npm start`
 
-    Runs the app in the development mode.\
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  Runs the app in the development mode.\
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - `npm run storybook`
 
-    start Storybook locally on [http://localhost:6006](http://localhost:6006) and output the address.
+  start Storybook locally on [http://localhost:6006](http://localhost:6006) and output the address.
 
 - `npx styleguidist server`
 
-    To start a style guide dev server on [http://localhost:6060](http://localhost:6060).
+  To start a style guide dev server on [http://localhost:6060](http://localhost:6060).
 
 - `npx styleguidist build`
 
-    To build a production HTML version.
+  To build a production HTML version.
 
 ## Features
 
-**2023-02-03:** 
+**2023-03-03:**
+
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
 - Typescript
+
+**2023-03-05:**
+
+- [Tailwind](https://tailwindcss.com/docs/installation)
 
 ### `npm test`
 

@@ -43,3 +43,12 @@
     transform: rotate(360deg);
   }
 }
+
+.dev-border {
+  border-width: 2px;
+}
+
+.dev-border-2 {
+  border-width: 2px;
+  border-color: aqua;
+}

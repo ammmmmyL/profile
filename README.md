@@ -29,6 +29,7 @@
 **2023-03-05:**
 
 - [Tailwind](https://tailwindcss.com/docs/installation)
+- [axios](https://github.com/axios/axios)
 
 ### `npm test`
 

@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { useEffect, useState } from 'react';
+import Typewriter from 'typewriter-effect';
 import './App.css';
 import Footer from './components/Footer';
 import NavVertical from './components/NavVertical';
@@ -55,7 +56,32 @@ function App() {
           <NavVertical />
 
           <div className="main">
-            <p>Amy Li</p>
+            <div className="header">
+              <div className="font-typewriter">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString('Hello there👋, ')
+                      .pauseFor(2000)
+                      .typeString('I’m')
+                      .start();
+                  }}
+                />
+              </div>
+              <h1 className="font-mono font-semibold text-3xl">Amy Li</h1>
+              <h4 className="font-typewriter text-lg">Full-Stack Developer</h4>
+              <div className="font-typewriter">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .pauseFor(10000)
+                      .typeString('Welcome to my website!')
+                      .start();
+                  }}
+                />
+              </div>
+            </div>
+
             {/* puzzle container */}
             <div className="grid grid-cols-2 gap-4  dev-border-2">
               {/* puzzle cell */}

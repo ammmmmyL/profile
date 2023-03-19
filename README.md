@@ -11,14 +11,6 @@
 
   start Storybook locally on [http://localhost:6006](http://localhost:6006) and output the address.
 
-- `npx styleguidist server`
-
-  To start a style guide dev server on [http://localhost:6060](http://localhost:6060).
-
-- `npx styleguidist build`
-
-  To build a production HTML version.
-
 ## Features
 
 **2023-03-03:**

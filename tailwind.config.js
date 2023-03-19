@@ -10,6 +10,11 @@ module.exports = {
       gray: colors.gray,
       lavender: '#9BAED8',
     },
+    fontFamily: {
+      typewriter: ['Special Elite'],
+      roboto: ['Roboto'],
+      mono: ['monospace', 'SFMono-Regular'],
+    },
     extend: {},
   },
   plugins: [],

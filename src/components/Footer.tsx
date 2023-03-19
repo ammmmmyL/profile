@@ -20,7 +20,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              className="hover:bg-violet-200 mb-0"
+              className="text-black/70 hover:text-lavender/100 hover:-translate-y-1 hover:h-5"
               style={styles.icon}
             />
           </Nav.Link>
@@ -33,7 +33,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="hover:bg-violet-200"
+              className="text-black/70 hover:text-lavender/100 hover:-translate-y-1 hover:h-5"
               style={styles.icon}
             />
           </Nav.Link>
@@ -46,7 +46,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="hover:bg-violet-200"
+              className="text-black/70 hover:text-lavender/100 hover:-translate-y-1 hover:h-5"
               style={styles.icon}
             />
           </Nav.Link>
@@ -61,8 +61,8 @@ export default Footer;
 const styles = {
   icon: {
     borderRadius: 5,
-    padding: 5,
-    color: 'rgba(0, 0, 0, 0.7)',
+    paddingRight: 5,
+    paddingLeft: 5,
     marginRight: 5,
     marginLeft: 5,
   },

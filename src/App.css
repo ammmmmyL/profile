@@ -13,8 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.main {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
@@ -43,6 +42,99 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* hide scroll bar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 20px;
+  border: 3px solid #f5f5f5;
+}
+
+/* Overwrite for bootstrap nav */
+.collapse.navbar-collapse {
+  visibility: visible;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:hover {
+  border-color: #9baed8;
+  border-width: 0.15rem;
+}
+
+/* Puzzles */
+.jigsaw1,
+.jigsaw2 {
+  width: 6em;
+  height: 6em;
+  margin: 50px;
+  position: relative;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: plum;
+}
+
+.right-out {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 2em;
+  left: 5.5em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  border-radius: 4em;
+  background-color: plum;
+}
+
+.top-out {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: -1.5em;
+  left: 2em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  border-radius: 4em;
+}
+
+.bottom-in {
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  top: 4.5em;
+  left: 2.2em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  border-radius: 4em;
+}
+
+.left-in {
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  top: 2.2em;
+  left: -0.4em;
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  border-radius: 4em;
 }
 
 .dev-border {

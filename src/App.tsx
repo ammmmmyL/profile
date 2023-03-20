@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import './App.css';
 import Footer from './components/Footer';
 import NavVertical from './components/NavVertical';
+import { Bubble } from './features/Bubble/Bubble';
 import { getSunTimesLocal } from './utils/calcBackground';
 
 function App() {
@@ -28,11 +29,11 @@ function App() {
           curTime >= moment(sunset).add(2, 'hours').format())
       ) {
         setBackground('night');
-        // sunset: 2h before sunset - 2h after sunset
+        // sunset: 2h before sunset - 1h after sunset
       } else if (
         sunset &&
         curTime >= moment(sunset).subtract(2, 'hours').format() &&
-        curTime <= moment(sunset).add(2, 'hours').format()
+        curTime <= moment(sunset).add(1, 'hours').format()
       ) {
         setBackground('sunset');
       }
@@ -84,10 +85,9 @@ function App() {
 
             {/* puzzle container */}
             <div className="grid grid-cols-2 gap-4  dev-border-2">
+              <Bubble backgroundWidth={800} backgroundHeight={400} Size={200} />
               {/* puzzle cell */}
-              <div className="flex bg-gray-200 justify-center items-center h-24">
-                Cell 1
-              </div>
+              <div className="flex bg-gray-200 justify-center items-center h-24"></div>
               <div className="flex bg-gray-200 justify-center items-center h-24">
                 Cell 2
               </div>

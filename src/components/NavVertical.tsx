@@ -26,13 +26,17 @@ const NavVertical = () => {
   return (
     <div>
       {isSmallScreen ? (
-        // Render the collapsed menu
+        //* Render the collapsed menu
         <div className="fixed top-0 left-0 w-full z-10">
           <Navbar
             collapseOnSelect={true}
             fixed="top"
             expand="md"
-            className="bg-gray-200 bg-opacity-30 backdrop-filter backdrop-blur-lg backdrop-opacity-25"
+            className={`
+              bg-gray-200 bg-opacity-30 
+              backdrop-filter backdrop-blur-lg backdrop-opacity-25
+              shadow-lg
+            `}
           >
             <Navbar.Brand href="#home"></Navbar.Brand>
             <Navbar.Toggle
@@ -58,7 +62,7 @@ const NavVertical = () => {
           </Navbar>
         </div>
       ) : (
-        // Render the full menu
+        //* Render the full menu
         <div className="relative">
           <Nav
             className={`
@@ -68,6 +72,7 @@ const NavVertical = () => {
               h-full w-20 sm:w-32 lg:w-40 
               bg-gray-200 bg-opacity-30 
               backdrop-filter backdrop-blur-lg backdrop-opacity-25
+              shadow-2xl
             `}
           >
             <div className={`flex flex-col justify-center h-full`}>

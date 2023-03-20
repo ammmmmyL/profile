@@ -1,5 +1,8 @@
 # Personal website
 
+## :sparkles:Currently Hosted on 
+https://ammmmmyl.github.io/
+
 ## Get Started
 
 - `npm start`

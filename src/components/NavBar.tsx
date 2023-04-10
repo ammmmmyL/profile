@@ -3,16 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './../App.css';
 
-const NavVertical = () => {
+const NavBar = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      const sm = 768; // md for tailwind
+      const md = 768; // md for tailwind
       const currentWidth = window.innerWidth;
       // console.log('currentWidth', currentWidth);
-      // console.log('isSmallScreen', currentWidth < sm);
-      setIsSmallScreen(currentWidth < sm);
+      // console.log('isSmallScreen', currentWidth < md);
+      setIsSmallScreen(currentWidth < md);
     };
 
     handleResize();
@@ -79,7 +79,7 @@ const NavVertical = () => {
               <Nav.Item>
                 <Nav.Link
                   className="text-black/70 hover:text-lavender/100"
-                  href="#about"
+                  href="/about"
                 >
                   About
                 </Nav.Link>
@@ -87,7 +87,7 @@ const NavVertical = () => {
               <Nav.Item>
                 <Nav.Link
                   className="text-black/70 hover:text-lavender/100"
-                  href="#skills"
+                  href="/skills"
                 >
                   Skills
                 </Nav.Link>
@@ -95,7 +95,7 @@ const NavVertical = () => {
               <Nav.Item>
                 <Nav.Link
                   className="text-black/70 hover:text-lavender/100"
-                  href="#projects"
+                  href="/projects"
                 >
                   Projects
                 </Nav.Link>
@@ -103,15 +103,7 @@ const NavVertical = () => {
               <Nav.Item>
                 <Nav.Link
                   className="text-black/70 hover:text-lavender/100"
-                  href="#blog"
-                >
-                  Blog
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  className="text-black/70 hover:text-lavender/100"
-                  href="#contact"
+                  href="/contact"
                 >
                   Contact
                 </Nav.Link>
@@ -124,4 +116,4 @@ const NavVertical = () => {
   );
 };
 
-export default NavVertical;
+export default NavBar;

@@ -1,6 +1,6 @@
-import axios from "axios";
-import moment from "moment";
-import { location } from "../data";
+import axios from 'axios';
+import moment from 'moment';
+import { location } from '../data';
 
 //* functions for dynamic background
 // https://sunrise-sunset.org/api

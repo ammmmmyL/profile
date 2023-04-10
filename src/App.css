@@ -145,3 +145,7 @@
   border-width: 2px;
   border-color: aqua;
 }
+
+.text-shadow-lg {
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.75);
+}

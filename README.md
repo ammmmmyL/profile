@@ -1,6 +1,7 @@
 # Personal website
 
-## :sparkles:Currently Hosted on 
+## :sparkles:Currently Hosted on
+
 https://ammmmmyl.github.io/
 
 ## Get Started
@@ -25,6 +26,10 @@ https://ammmmmyl.github.io/
 
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [axios](https://github.com/axios/axios)
+
+**2023-04-09:**
+
+- [Routing](https://reactrouter.com/en/main/start/tutorial)
 
 ### `npm test`
 

@@ -1,4 +1,4 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { ReactNode, useEffect, useState } from 'react';
 import '../App.css';
 import { getSunTimesLocal } from '../utils/calcBackground';
@@ -8,8 +8,9 @@ type Props = {
 };
 
 const DynamicBackground = ({ children }: Props) => {
-  const [background, setBackground] =
-    useState<'day' | 'night' | 'sunset'>('day');
+  const [background, setBackground] = useState<'day' | 'night' | 'sunset'>(
+    'day'
+  );
 
   // TODO background animation?
   useEffect(() => {
@@ -20,20 +21,20 @@ const DynamicBackground = ({ children }: Props) => {
       const { sunrise, sunset } = res || {};
       // console.info(`sunrise: ${sunrise}`);
       // console.info(`sunset: ${sunset}`);
-      const curTime = moment().format();
+      const curTime = dayjs().format();
       //* night: 2h after sunset - before sunrise
       if (
         sunrise &&
         sunset &&
         (curTime <= sunrise ||
-          curTime >= moment(sunset).add(2, 'hours').format())
+          curTime >= dayjs(sunset).add(2, 'hours').format())
       ) {
         setBackground('night');
         //* sunset: 2h before sunset - 1h after sunset
       } else if (
         sunset &&
-        curTime >= moment(sunset).subtract(2, 'hours').format() &&
-        curTime <= moment(sunset).add(5, 'hours').format()
+        curTime >= dayjs(sunset).subtract(2, 'hours').format() &&
+        curTime <= dayjs(sunset).add(5, 'hours').format()
       ) {
         setBackground('sunset');
       }
@@ -51,7 +52,7 @@ const DynamicBackground = ({ children }: Props) => {
     <div className="flex-1">
       <div className="App">
         <div
-          className="flex items-center justify-center h-screen flex-col"
+          className="flex flex-col items-center justify-center h-screen"
           style={{
             backgroundImage: `url(./${background}.jpg)`,
             backgroundSize: '100% 100%',

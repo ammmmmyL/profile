@@ -4,6 +4,12 @@
 
 https://ammmmmyl.github.io/
 
+- hosted using [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
+
+**to update the github page, do:**
+
+1. `npm run deploy`
+
 ## Get Started
 
 - `npm start`

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { location } from '../data';
 
 //* functions for dynamic background
@@ -9,9 +9,10 @@ export const getSunTimesLocal = async ({ lat, lng }: location) => {
   try {
     const response = await axios.get(url);
     const data = response.data.results;
-    const sunrise = moment(data.sunrise).local().format();
-    const sunset = moment(data.sunset).local().format();
+    const sunrise = dayjs(data.sunrise).locale();
+    const sunset = dayjs(data.sunset).locale();
 
+    console.log(sunrise, sunset);
     return { sunrise, sunset };
   } catch (error) {
     console.error(error);

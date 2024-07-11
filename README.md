@@ -4,7 +4,7 @@
 
 https://ammmmmyl.github.io/
 
-- hosted using [gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
+- hosted using `gh-pages`
 
 **to update the github page, do:**
 

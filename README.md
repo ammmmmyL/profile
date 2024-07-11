@@ -2,7 +2,7 @@
 
 ## :sparkles:Currently Hosted on
 
-https://ammmmmyl.github.io/
+https://ammmmmyl.github.io/profile
 
 - hosted using `gh-pages`
 

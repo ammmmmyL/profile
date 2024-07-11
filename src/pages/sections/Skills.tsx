@@ -39,11 +39,11 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
             'items-center justify-center flex flex-col gap-3',
             'lg:max-w-[1000px]'
           )}
-          style={{ borderWidth: 2, borderColor: 'red' }}
+          // style={{ borderWidth: 2, borderColor: 'red' }}
         >
           <div
             className="flex flex-row items-center justify-center gap-5"
-            style={{ borderWidth: 2, borderColor: 'yellow' }}
+            // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faReact} />
             <IconNextJs className={IconClassName} />
@@ -54,7 +54,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
           </div>
           <div
             className="flex flex-row items-center justify-center gap-5"
-            style={{ borderWidth: 2, borderColor: 'yellow' }}
+            // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faJsSquare} />
             <IconC className={IconClassName} />
@@ -63,7 +63,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
           </div>
           <div
             className="flex flex-row items-center justify-center gap-5"
-            style={{ borderWidth: 2, borderColor: 'yellow' }}
+            // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faNode} />
             <IconPostgreSql className={IconClassName} />

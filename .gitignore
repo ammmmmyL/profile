@@ -1,4 +1,5 @@
 # dependencies
+node_modules/*
 /node_modules
 .vscode/
 /.pnp
@@ -33,3 +34,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 *storybook.log
+

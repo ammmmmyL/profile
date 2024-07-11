@@ -1,13 +1,12 @@
 import Typewriter from 'typewriter-effect';
 import Footer from '.././components/Footer';
-import NavBar from '.././components/NavBar';
 import '../App.css';
 import DynamicBackground from '../components/DynamicBackground';
 
 const HomePage = () => {
   return (
     <DynamicBackground>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="main">
         <div className="header">
           <div className="font-typewriter text-shadow-lg">

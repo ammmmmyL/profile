@@ -10,7 +10,7 @@ const HomePage = () => {
 
       <div className="main">
         <div className="header">
-          <h1 className="font-roboto font-semibold text-3xl text-shadow-lg">
+          <h1 className="text-3xl font-semibold font-roboto text-shadow-lg">
             About Page WIP
           </h1>
         </div>

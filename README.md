@@ -25,21 +25,17 @@ https://ammmmmyl.github.io/
   `serve -s build`
   Create a production build and serve with a static server.
 
-## Features
-
-**2023-03-03:**
+## Notes
 
 - [Storybook](https://storybook.js.org/docs/react/get-started/introduction)
 - Typescript
-
-**2023-03-05:**
-
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [axios](https://github.com/axios/axios)
-
-**2023-04-09:**
-
 - [Routing](https://reactrouter.com/en/main/start/tutorial)
+
+## TODOS
+
+- different themes color for day, night, sunset
 
 ### `npm test`
 

@@ -10,6 +10,8 @@ https://ammmmmyl.github.io/
 
 1. `npm run deploy`
 
+For Debugging `NODE_DEBUG=gh-pages npm run deploy`
+
 ## Get Started
 
 - `npm start`

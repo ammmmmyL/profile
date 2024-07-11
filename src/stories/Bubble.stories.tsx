@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react/*';
 import { Bubble } from '../features/static/Bubble';
 
 const meta = {
+  title: 'Static UI/Bubble',
   component: Bubble,
 } satisfies Meta<typeof Bubble>;
 

@@ -1,6 +1,9 @@
 import axios from 'axios';
 import dayjs from 'dayjs';
+// import relativeTime from 'dayjs/plugin/relativeTime'
 import { location } from '../data';
+
+// dayjs.extend(relativeTime);
 
 //* functions for dynamic background
 // https://sunrise-sunset.org/api
@@ -9,10 +12,9 @@ export const getSunTimesLocal = async ({ lat, lng }: location) => {
   try {
     const response = await axios.get(url);
     const data = response.data.results;
-    const sunrise = dayjs(data.sunrise).locale();
-    const sunset = dayjs(data.sunset).locale();
+    const sunrise = dayjs(data.sunrise).format();
+    const sunset = dayjs(data.sunset).format();
 
-    console.log(sunrise, sunset);
     return { sunrise, sunset };
   } catch (error) {
     console.error(error);

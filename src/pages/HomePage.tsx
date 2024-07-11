@@ -21,10 +21,10 @@ const HomePage = () => {
               }}
             />
           </div>
-          <h1 className="font-roboto font-semibold text-3xl text-shadow-lg">
+          <h1 className="text-3xl font-semibold leading-normal font-typewriter text-shadow-lg">
             Amy Li
           </h1>
-          <div className="font-typewriter text-lg text-shadow-lg">
+          <div className="text-lg font-typewriter text-shadow-lg">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

@@ -21,6 +21,10 @@ https://ammmmmyl.github.io/
 
   start Storybook locally on [http://localhost:6006](http://localhost:6006) and output the address.
 
+- `npm run build`
+  `serve -s build`
+  Create a production build and serve with a static server.
+
 ## Features
 
 **2023-03-03:**

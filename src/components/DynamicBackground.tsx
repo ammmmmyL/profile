@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { ReactNode, useEffect, useState } from 'react';
 import '../App.css';
-import { getSunTimesLocal } from '../utils/calcBackground';
+import { getSunTimesLocal } from '../lib/calcBackground';
 
 type Props = {
   children: ReactNode;

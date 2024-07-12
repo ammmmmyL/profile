@@ -1,18 +1,24 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { HTMLAttributes } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { cn } from '../lib/utils';
+import { BaseProps } from '../pages/HomePage';
 import './../App.css';
 
 const EMAIL = 'yuqing.li.amy@gmail.com';
 
+interface FooterProps extends HTMLAttributes<HTMLDivElement>, BaseProps {}
 // TODO: other icons should be fixed when hover over 1 icon
 
-const Footer = () => {
+const Footer = ({ theme }: FooterProps) => {
   return (
-    <Navbar fixed="bottom" className="items-baseline justify-center">
+    <Navbar
+      fixed="bottom"
+      className={cn(`${theme}`, 'items-baseline justify-center')}
+    >
       <Nav className="flex items-baseline justify-center gap-6">
         <Nav.Item>
           {/* Link open in new tab */}
@@ -72,7 +78,7 @@ const styles = {
 };
 
 const IconClassName = cn(
-  'text-black/70 hover:text-white',
+  'text-skin-inverted opacity-70 hover:text-skin-base',
   'hover:animate-pulse hover:-translate-y-1 h-5',
-  'lg:h-6 lg:hover:h-8'
+  'md:h-6 md:hover:h-8'
 );

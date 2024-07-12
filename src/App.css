@@ -21,11 +21,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .App-footer {
@@ -59,21 +54,4 @@
   background-color: #000000;
   border-radius: 20px;
   border: 3px solid #f5f5f5;
-}
-
-/* Overwrite for bootstrap nav */
-.collapse.navbar-collapse {
-  visibility: visible;
-}
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler:hover {
-  border-color: #9baed8;
-  border-width: 0.15rem;
 }

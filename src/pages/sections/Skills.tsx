@@ -16,18 +16,21 @@ import IconNextJs from '../../components/icons/NextJs';
 import IconPostgreSql from '../../components/icons/PostgreSql';
 import IconTailwind from '../../components/icons/Tailwind';
 import { cn } from '../../lib/utils';
+import { BaseProps } from '../HomePage';
 
-interface SkillsProps extends HTMLAttributes<HTMLDivElement> {}
+interface SkillsProps extends HTMLAttributes<HTMLDivElement>, BaseProps {}
 
 // TODO: Start animation when in view
 // TODO: randomize bouncing
 // TODO: bounce once or twice
 const Skills = forwardRef<HTMLDivElement, SkillsProps>(
-  ({ className, ...props }, ref) => {
+  ({ className, theme, ...props }, ref) => {
     return (
       <div
         className={cn(
-          'bg-[#375785] min-h-screen flex justify-center items-start',
+          `${theme}`,
+          'bg-skin-fill min-h-screen flex justify-center items-start',
+          'px-5 py-10',
           'lg:p-40',
           className
         )}
@@ -36,13 +39,13 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
       >
         <div
           className={cn(
-            'items-center justify-center flex flex-col gap-3',
+            'items-center justify-center flex-col flex gap-3',
             'lg:max-w-[1000px]'
           )}
           // style={{ borderWidth: 2, borderColor: 'red' }}
         >
           <div
-            className="flex flex-row items-center justify-center gap-5"
+            className={IconDivClassName}
             // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faReact} />
@@ -53,7 +56,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
             <IconGraphQL className={IconClassName} />
           </div>
           <div
-            className="flex flex-row items-center justify-center gap-5"
+            className={IconDivClassName}
             // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faJsSquare} />
@@ -62,7 +65,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
             <FontAwesomeIcon className={IconClassName} icon={faPython} />
           </div>
           <div
-            className="flex flex-row items-center justify-center gap-5"
+            className={IconDivClassName}
             // style={{ borderWidth: 2, borderColor: 'yellow' }}
           >
             <FontAwesomeIcon className={IconClassName} icon={faNode} />
@@ -78,5 +81,13 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
 export default Skills;
 
 const IconClassName = cn(
-  'w-20 h-20 text-white animate-bounce-pulse hover:animate-pulse'
+  'text-skin-base animate-bounce-pulse hover:animate-pulse',
+  'w-10 h-10',
+  'md:w-16 md:h-16',
+  'lg:w-20 lg:h-20'
+);
+
+const IconDivClassName = cn(
+  'flex flex-wrap flex-row items-center justify-center gap-3',
+  'lg:gap-5'
 );

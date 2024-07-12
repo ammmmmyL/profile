@@ -8,9 +8,12 @@ https://ammmmmyl.github.io/profile
 
 **to update the github page, do:**
 
-1. `npm run deploy`
+1. For **DEV**, set `"homepage": "https://ammmmmyl.github.io` in package.json
 
-For Debugging `NODE_DEBUG=gh-pages npm run deploy`
+2. For **DEPLOY**, set `"homepage": "https://ammmmmyl.github.io/profile` in package.json
+3. `npm run deploy`
+
+   - Debugging run `NODE_DEBUG=gh-pages npm run deploy`
 
 ## Get Started
 

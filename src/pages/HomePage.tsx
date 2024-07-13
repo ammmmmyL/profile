@@ -26,10 +26,10 @@ const HomePage = () => {
     const loadBg = async () => {
       const res = await getSunTimesLocal(torontoLoc);
       const { sunrise, sunset } = res || {};
-      console.info(`sunrise: ${sunrise}`);
-      console.info(`sunset: ${sunset}`);
+      // console.info(`sunrise: ${sunrise}`);
+      // console.info(`sunset: ${sunset}`);
       const curTime = dayjs().format();
-      console.info(`currentTime: ${curTime}`);
+      // console.info(`currentTime: ${curTime}`);
       //* night: 2h after sunset - before sunrise
       if (
         sunrise &&
@@ -104,7 +104,6 @@ const HomePage = () => {
               />
             </div>
 
-            {/* // TODO： styles */}
             <Button
               className="my-10"
               variant="outline"
@@ -119,7 +118,17 @@ const HomePage = () => {
         </div>
       </DynamicBackground>
 
-      <Skills ref={skillsRef} theme={theme} />
+      <div
+        className={cn(
+          `${theme}`,
+          'bg-skin-fill min-h-screen flex flex-col items-center'
+        )}
+      >
+        <Skills ref={skillsRef} theme={theme} />
+        <div className="w-full text-4xl bg-white text-skin-muted">
+          <h1 className="text-center">MUTED TEXT</h1>
+        </div>
+      </div>
 
       <Footer theme={theme} />
     </div>

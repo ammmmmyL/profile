@@ -9,6 +9,36 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+export const Day: Story = {
+  args: {
+    variant: 'outline',
+    size: 'lg',
+    children: <span>Button</span>,
+  },
+  decorators: (Story) => {
+    return (
+      <div className="flex items-center justify-center flex-1 theme-day">
+        <Story />
+      </div>
+    );
+  },
+};
+
+export const Sunset: Story = {
+  args: {
+    variant: 'outline',
+    size: 'lg',
+    children: <span>Button</span>,
+  },
+  decorators: (Story) => {
+    return (
+      <div className="flex items-center justify-center flex-1 theme-sunset">
+        <Story />
+      </div>
+    );
+  },
+};
+
 export const Night: Story = {
   args: {
     variant: 'outline',

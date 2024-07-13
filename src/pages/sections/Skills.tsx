@@ -29,7 +29,7 @@ const Skills = forwardRef<HTMLDivElement, SkillsProps>(
       <div
         className={cn(
           `${theme}`,
-          'bg-skin-fill min-h-screen flex justify-center items-start',
+          'flex justify-center items-start',
           'px-5 py-10',
           'lg:p-40',
           className

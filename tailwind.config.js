@@ -21,19 +21,21 @@ module.exports = {
           muted: withOpacity('--color-text-muted'),
           inverted: withOpacity('--color-text-inverted'),
           accent: withOpacity(`--color-text-accent`),
+          button: withOpacity(`--color-text-button`),
         },
       },
       backgroundColor: {
         skin: {
           fill: withOpacity('--color-fill'),
           'button-accent': withOpacity('--color-button-accent'),
-          'button-accent-hover': withOpacity('--color-button-accent-hover'),
+          'button-base': withOpacity('--color-text-base'),
           'button-muted': withOpacity('--color-button-muted'),
         },
       },
       borderColor: {
         skin: {
           accent: withOpacity(`--color-text-accent`),
+          button: withOpacity(`--color-text-button`),
         },
       },
       // themes end

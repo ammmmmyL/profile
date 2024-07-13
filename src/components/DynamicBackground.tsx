@@ -17,6 +17,7 @@ const DynamicBackground = ({ children, background }: Props) => {
             backgroundSize: '100% 100%',
             backgroundRepeat: 'no-repeat',
             width: '100%',
+            opacity: '80%',
           }}
         >
           {children}

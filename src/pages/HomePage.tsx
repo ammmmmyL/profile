@@ -26,9 +26,10 @@ const HomePage = () => {
     const loadBg = async () => {
       const res = await getSunTimesLocal(torontoLoc);
       const { sunrise, sunset } = res || {};
-      // console.info(`sunrise: ${sunrise}`);
-      // console.info(`sunset: ${sunset}`);
+      console.info(`sunrise: ${sunrise}`);
+      console.info(`sunset: ${sunset}`);
       const curTime = dayjs().format();
+      console.info(`currentTime: ${curTime}`);
       //* night: 2h after sunset - before sunrise
       if (
         sunrise &&
